@@ -1,59 +1,85 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
+<!-- PROJECT SHIELD -->
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <a href="https://github.com/dhruvilob-stack/payment-module">
+    <img src="https://img.shields.io/github/v/release/dhruvilob-stack/payment-module?style=for-the-badge" alt="Release">
+    <img src="https://img.shields.io/github/issues/dhruvilob-stack/payment-module?style=for-the-badge" alt="Issues">
+    <img src="https://img.shields.io/github/license/dhruvilob-stack/payment-module?style=for-the-badge" alt="License">
+  </a>
 </p>
 
-## About Laravel
+<!-- TITLE -->
+<h1 align="center">💳 Payment Module</h1>
+<p align="center">
+  A clean, simple & extensible payment gateway integration module built on Laravel 🎯
+</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🚀 About The Project
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+This repository contains a payment module designed to make payment gateway integration smooth and modular in Laravel applications. Whether you’re processing UPI, card payments, subscriptions, or invoices – this module can be your backbone for secure transactions.
 
-## Learning Laravel
+🌐 **Live Demo:** https://payment-module-47xx.onrender.com/student :contentReference[oaicite:1]{index=1}  
+📦 Built with Laravel, Vue, and modern frontend tooling.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🧱 Features
 
-## Laravel Sponsors
+✨ **Clean & Modular Structure**  
+🪪 Supports multiple payment types & gateways  
+⚙️ Easy to customize and extend with your own providers  
+📊 Includes basic transaction logging & API routes  
+🔒 Secure with validation & environment configurations  
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+---
 
-### Premium Partners
+## 🧭 Table of Contents
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+- [About The Project](#-about-the-project)  
+- [Features](#-features)  
+- [Screenshots](#-screenshots)  
+- [Installation](#-installation)  
+- [Usage](#-usage)  
+- [API Endpoints](#-api-endpoints)  
+- [Contributing](#-contributing)  
+- [License](#-license)  
+- [Contact](#-contact)
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 📸 Screenshots
 
-## Code of Conduct
+<p align="center">
+  <img width="1600" height="829" alt="image" src="https://github.com/user-attachments/assets/98efb5b9-ca31-4085-ad79-9034a3bac2dd" alt="Dashboard"/>
+  <img width="1600" height="829" alt="image" src="https://github.com/user-attachments/assets/1443d5d3-6059-430b-9566-c30d9c78f982" alt="Payment Page"/>
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+</p>
 
-## Security Vulnerabilities
+> Add more screenshots in `/docs/screenshots` to visually demonstrate features 🚀
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
-## License
+## 🧰 Installation
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Follow these steps to get your local development copy up and running.
+
+```sh
+# Clone
+git clone https://github.com/dhruvilob-stack/payment-module.git
+
+# Go into the directory
+cd payment-module
+
+# Install backend dependencies
+composer install
+
+# Install frontend dependencies
+npm install && npm run build
+
+# Copy environment example and set keys
+cp .env.example .env
+php artisan key:generate
+
+# Start the server
+php artisan serve
