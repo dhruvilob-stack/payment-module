@@ -56,8 +56,6 @@ This repository contains a payment module designed to make payment gateway integ
 
 </p>
 
-> Add more screenshots in `/docs/screenshots` to visually demonstrate features 🚀
-
 ---
 
 ## 🧰 Installation
