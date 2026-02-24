@@ -23,4 +23,4 @@ COPY . .
 RUN chown -R www-data:www-data storage bootstrap/cache \
     && chmod -R 775 storage bootstrap/cache
 
-CMD sh -c "php artisan package:discover --ansi && php artisan config:clear && php artisan cache:clear && php artisan migrate --force && php artisan serve --host=0.0.0.0 --port=${PORT:-10000}"
+CMD sh -c "php artisan package:discover --ansi && php artisan migrate --force && php artisan serve --host=0.0.0.0 --port=${PORT:-10000}"
